@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SavedMessages.DataAccessLayer.Entities.FileLocation>
+
+@{
+                /**/
+
+                ViewBag.Title = "GetAllFiles";
+}
+
+<h2>Мои изображения</h2>
+
+<p>
+    @Html.ActionLink("Добавить файл", "CreateFile")
+</p>
+<table>
+    <tr>
+        <th>Время добавления</th>
+        <th>Картинка</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Time)
+    </td>
+    <td>
+        @Html.Raw("<img style='width:80px; height:60px;' src=\"data:image/jpeg;base64,"
+                            + Convert.ToBase64String(item.File) + "\" />")
+    </td>
+    <td>
+        @Html.ActionLink("Delete","DeleteFile", new { id = item.FileId })
+    </td>
+</tr>
+}
+
+
+</table>
+<p>
+    @Html.ActionLink("Back to MyInfo", "MyDetails") |
+</p>

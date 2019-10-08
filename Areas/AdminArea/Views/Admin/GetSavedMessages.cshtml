@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SavedMessages.DataAccessLayer.Entities.Message>
+
+@{
+    ViewBag.Title = "GetSavedMessages";
+}
+
+<h2>GetSavedMessages</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsSaved)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsSaved)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditMessage", new { id=item.MessageId }) |
+            @Html.ActionLink("Delete", "DeleteFromSaved", new { id=item.MessageId })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Back to MyInfo", "MyDetails") |
+    @Html.ActionLink("All Messages", "GetMyMessages")
+</p>

@@ -1,0 +1,16 @@
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\SavedMessages.DataAccessLayer.dll.config
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\SavedMessages.DataAccessLayer.dll
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\SavedMessages.DataAccessLayer.pdb
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.csproj.CopyComplete
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.dll
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.pdb
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.Migrations.ProjMigration.resources
+C:\Users\Home\source\repos\SavedMessages\SavedMessages.DataAccessLayer\obj\Debug\SavedMessages.DataAccessLayer.csproj.GenerateResource.cache

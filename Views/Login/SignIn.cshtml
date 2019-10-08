@@ -1,0 +1,53 @@
+﻿@model SavedMessages.DataAccessLayer.LoginVM
+
+<script src="/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var loginInput = $('#Login');
+        var color = loginInput.css("background-color");
+        loginInput.keyup(function (e) {
+            $.ajax({
+                url: "@Url.Action("IsAccountExists", "Login")",
+                type: "GET",
+                data: { login: loginInput.val()},
+                success: function (result) {
+                    if (result === true) {
+                        loginInput.css("background-color", "green")
+                    }
+                    else {
+                        loginInput.css("background-color", color)
+                    }
+                },
+                statusCode: {
+                    406: function () {
+                        loginInput.css("background-color", "yellow");
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(s => s.ReturnUrl)
+    <h1>Login to site</h1>
+    <div>
+        <p>
+            @Html.TextBoxFor(s => s.Email)
+            @Html.ValidationMessageFor(s => s.Email)
+        </p>
+        <p>
+            @Html.PasswordFor(s => s.Password)
+            @Html.ValidationMessageFor(s => s.Password)
+        </p>
+
+        <p>@Html.ValidationMessage("SigninError")</p>
+        <button type="submit">Login</button>
+    </div>
+}

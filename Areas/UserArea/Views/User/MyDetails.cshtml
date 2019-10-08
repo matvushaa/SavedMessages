@@ -1,0 +1,60 @@
+﻿@model SavedMessages.DataAccessLayer.Entities.User
+
+@{
+    ViewBag.Title = "MyDetails";
+}
+
+<h2>MyDetails</h2>
+
+<div>
+    <h4>Admin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Permission.PermissionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Permission.PermissionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsVerifyed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsVerifyed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("MyFiles", "GetAllFiles", new { id = Model.Id }) |
+    @Html.ActionLink("MyStickers", "GetStickers", new { id = Model.Id }) |
+    @Html.ActionLink("MyMessages", "GetMyMessages", new { id = Model.Id }) |
+    @Html.ActionLink("SavedMessages", "GetSavedMessages", new { id = Model.Id })
+</p>
